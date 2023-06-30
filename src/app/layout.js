@@ -1,4 +1,5 @@
 import './globals.css'
+import Script from 'next/script'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head><script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script></head>
+      <head><script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js" async / ></head>
       <body className={inter.className}>{children}</body>
     </html>
   )
