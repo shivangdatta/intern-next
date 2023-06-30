@@ -11,6 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head><script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script></head>
       <body className={inter.className}>{children}</body>
     </html>
   )
